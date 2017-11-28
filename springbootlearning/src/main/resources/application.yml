@@ -6,7 +6,7 @@
    active: dev
  datasource:
   name: test
-  url: jdbc:mysql://192.168.16.137:3306/test
+  url: jdbc:mysql://localhost:3306/practice
   username: root
   password: root
 #使用druid数据源
@@ -28,4 +28,3 @@
   
  mybatis:
   mapperLocations: classpath:mapper/*.xml
- #typeAliasesPackage: tk.mapper.model

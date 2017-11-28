@@ -73,6 +73,14 @@
         </dependency>
         <!-- add mybatis end -->
         
+        <!-- add pagehelper start -->
+         <dependency>  
+            <groupId>com.github.pagehelper</groupId>  
+            <artifactId>pagehelper</artifactId>  
+            <version>4.0.0</version>  
+        </dependency>
+        <!-- add pagehelper end -->
+        
     <!-- dependency for database end-->
 
 	</dependencies>

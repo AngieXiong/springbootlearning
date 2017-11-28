@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.example.demo.entity.Account;
 
+/**
+ *  use traditional way to match DAO and sql statement.The MybatisConfig.java is needed.
+ * @author anqi.xiong
+ *
+ */
 public interface IAccountMapper {
 	
 	int add(Account account);

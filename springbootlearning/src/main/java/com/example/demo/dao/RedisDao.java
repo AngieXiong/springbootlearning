@@ -14,7 +14,7 @@ public class RedisDao {
 
 	public void setKey(String key, String value) {
 		ValueOperations<String, String> ops = template.opsForValue();
-		ops.set(key, value, 1, TimeUnit.MINUTES);// 1分钟过期
+		ops.set(key, value, 30, TimeUnit.MINUTES);// 30分钟过期
 	}
 
 	public String getValue(String key) {

@@ -81,8 +81,20 @@
         </dependency>
         <!-- add pagehelper end -->
         
+        <!-- mongoDB start -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <!-- mongoDB start -->
     <!-- dependency for database end-->
-
+    
+    <!-- dependency for redis start-->
+		<dependency>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+	<!-- dependency for redis end-->
 	</dependencies>
 
 	<build>

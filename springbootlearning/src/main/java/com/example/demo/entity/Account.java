@@ -35,4 +35,10 @@ public class Account {
 	public void setMoney(Double money) {
 		this.money = money;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("Customer[id=%s, firstName='%s', lastName='%s']", id, name, money);
+	}
+
 }

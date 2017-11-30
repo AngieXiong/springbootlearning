@@ -4,8 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.example.demo.dao.IAccountMapper;
+import com.example.demo.dao.IAccountMapper4Mybatis;
 import com.example.demo.entity.Account;
 import com.example.demo.service.IAccountService;
 
@@ -13,18 +14,24 @@ import com.example.demo.service.IAccountService;
 public class AccountServiceImpl implements IAccountService {
 
 	@Autowired
-	private IAccountMapper accountDAO;
+	private IAccountMapper4Mybatis accountDAO;
 
+	@Transactional
 	@Override
 	public int add(Account account) {
 		return accountDAO.add(account);
 	}
 
+	/**
+	 * Use annotation (@Transactional) to turn on transaction
+	 */
+	@Transactional
 	@Override
 	public int update(Account account) {
 		return accountDAO.update(account);
 	}
 
+	@Transactional
 	@Override
 	public int delete(int id) {
 		return accountDAO.delete(id);

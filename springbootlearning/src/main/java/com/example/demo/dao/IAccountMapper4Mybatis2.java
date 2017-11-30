@@ -16,7 +16,7 @@ import com.example.demo.entity.Account;
  *
  */
 @Mapper
-public interface IAccountMapper2 {
+public interface IAccountMapper4Mybatis2 {
 	
 	@Insert("insert into account(name,money) values(#{name},#{money})")
 	int add(Account account);

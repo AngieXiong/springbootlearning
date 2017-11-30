@@ -9,7 +9,7 @@ import com.example.demo.entity.Account;
  * @author anqi.xiong
  *
  */
-public interface IAccountMapper {
+public interface IAccountMapper4Mybatis {
 	
 	int add(Account account);
 	
